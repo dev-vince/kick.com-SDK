@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "tls_client", "pystyle", "art"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kick_sdk"
+version = "1.0.0"
+authors = [
+  { name="dev-vince", email="imdevvince@gmail.com" },
+]
+description = "SDK (Starter Developer Kit) for Kick.com enabling creation of bots"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dev-vince/kick.com-SDK"
+"Bug Tracker" = "https://github.com/dev-vince/kick.com-SDK/issues"
