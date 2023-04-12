@@ -111,3 +111,17 @@ class KickSDK:
         if request.status_code != 200:
             return -1
         return request.json()['id']
+
+    def follow_channel(self, channel_id: int) -> bool:
+        request = self.session.post(f"https://kick.com/api/v1/channels/{channel_id}/follow",
+                                    headers=auth_headers)
+        if request.status_code != 201:
+            return False
+        return True
+
+    def unfollow_channel(self, channel_id: int) -> bool:
+        request = self.session.delete(f"https://kick.com/api/v1/channels/{channel_id}/follow",
+                                      headers=auth_headers)
+        if request.status_code != 200:
+            return False
+        return True

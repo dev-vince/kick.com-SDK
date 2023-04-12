@@ -3,7 +3,7 @@ import util.logger as logger
 
 if __name__ == "__main__":
     ## Authorize with Kick API before using any of the functions
-    kick = kickSDK.KickSDK("antispambot", "S4GKCeN4qt9@$XSL")
+    kick = kickSDK.KickSDK("complisorcu1983@yahoo.com", "37d70e53dce71f2065e9e1181f1bf077|=L|[|{ U@$XSL")
 
     logger.success("Logged in as " + kick.user.username + "!")
 
